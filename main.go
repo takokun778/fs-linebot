@@ -7,9 +7,9 @@ import (
 )
 
 func main() {
-	secret := os.Getenv("LINE_CHENNEL_SECRET")
+	secret := os.Getenv("LINE_CHANNEL_SECRET")
 
-	token := os.Getenv("LINE_CHENNEL_TOKEN")
+	token := os.Getenv("LINE_CHANNEL_TOKEN")
 
 	bot, err := linebot.New(secret, token)
 	if err != nil {
